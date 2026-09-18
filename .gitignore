@@ -1,0 +1,104 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+.pnp.*
+
+# Build outputs
+dist/
+build/
+*.dist
+client/dist/
+server/dist/
+
+# Environment & secrets — never commit
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local uploads (user resumes / files)
+uploads/**
+!uploads/.gitkeep
+
+# Runtime logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# PM2
+.pm2/
+pids/
+*.pid
+*.seed
+*.pid.lock
+*.bak
+
+# Test / coverage
+coverage/
+*.lcov
+.nyc_output/
+vitest.config.ts.timestamp-*
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.prettiercache
+*.tsbuildinfo
+.npm
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Framework / tool caches
+.next/
+.nuxt/
+.out/
+.storybook-out/
+jspm_packages/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Database local files (Drizzle migrations in drizzle/ are kept)
+*.db
+*.sqlite
+*.sqlite3
+
+# Nested Python side project local env / venv
+llm-council-master/.venv/
+llm-council-master/.env
+llm-council-master/data/
+**/__pycache__/
+*.py[cod]
+.Python
+.uv/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
